@@ -23,12 +23,6 @@ h1 {
     margin-top: 20px;
 }
 
-h2 {
-    font-family: 'Quicksand';
-    font-size: 2rem;
-    padding-bottom: 20px;
-}
-
 .container {
     display: flex;
     flex-direction: column;
@@ -111,4 +105,9 @@ h2 {
 
 .won::after {
     color: red;
+}
+
+.x,
+.o {
+    cursor: default;
 }
