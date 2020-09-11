@@ -101,10 +101,11 @@ h2 {
 .x::after {
     content: 'X';
     font-size: 100px;
+    color: red;
 }
 
 .o::after {
     content: 'O';
     font-size: 100px;
-    color: gray;
+    color: green;
 }
