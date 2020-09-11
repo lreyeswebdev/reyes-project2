@@ -6,14 +6,12 @@ const squares = document.querySelectorAll('.square');
 // game variables
 let gameIsLive = true;
 let xIsNext = true;
-let winner = null;
 
 // functions
 
 const winCondition = (letter) => {
     gameIsLive = false;
-    winner = letter;
-    displayContent.innerHTML = `${winner} has won! 🏆`;
+    displayContent.innerHTML = `${letter} has won! 🏆`;
 };
 
 const checkGameStatus = () => {
@@ -90,13 +88,14 @@ const restartGame = () => {
         square.classList.remove('o');
         square.classList.remove('won');
     }
+    gameIsLive = true;
 }
 
 const squareClick = (e) => {
     const classList = e.target.classList;
     
 
-    if (classList[1] === 'x' || classList[1] === 'o') {
+    if (!gameIsLive || classList[1] === 'x' || classList[1] === 'o') {
         return;
     }
 
