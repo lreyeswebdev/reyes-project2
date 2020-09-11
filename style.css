@@ -19,8 +19,8 @@ body {
 h1 {
     font-family: 'Grandstander';
     font-size: 4rem;
-    padding-bottom: 80px;
-    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 h2 {
@@ -34,11 +34,12 @@ h2 {
     flex-direction: column;
     align-items: center;
     width: 900px;
-    height: 800px;
+    height: auto;
 }
 
 .button-div {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .btn {
@@ -65,7 +66,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 500px;
+    width: 450px;
     height: 50px;
     box-shadow: 12px 7px 90px 0 rgba(110,123,131,.3);
     background: #e6ebe7;
@@ -77,4 +78,32 @@ h2 {
 #displayContent {
     font-size: 20px;
     font-weight: 600;
+}
+
+#board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+    height: 450px;
+    margin-bottom: 30px;
+    
+}
+
+.square {
+    border: 2px solid black;
+    height: 150px;
+    width: 150px;
+    background: #e6ebe7;
+    cursor: pointer;
+    text-align: center;
+}
+
+.x::after {
+    content: 'X';
+    font-size: 100px;
+}
+
+.o::after {
+    content: 'O';
+    font-size: 100px;
 }
