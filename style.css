@@ -93,7 +93,7 @@ h2 {
     border: 2px solid black;
     height: 150px;
     width: 150px;
-    background: #e6ebe7;
+    background: #f1f4f1;
     cursor: pointer;
     text-align: center;
 }
@@ -106,4 +106,5 @@ h2 {
 .o::after {
     content: 'O';
     font-size: 100px;
+    color: gray;
 }

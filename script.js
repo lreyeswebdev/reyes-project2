@@ -6,6 +6,8 @@ const squares = document.querySelectorAll('.square');
 // game variables
 let gameIsLive = true;
 let xIsNext = true;
+let winner = null;
+
 
 
 // event handlers
@@ -19,9 +21,11 @@ const squareClick = (e) => {
 
     if (xIsNext) {
         classList.add('x');
-        xIsNext = !xIsNext;
+        displayContent.innerHTML = "Player O's turn.";
+        xIsNext = !xIsNext;        
     } else {
         classList.add('o');
+        displayContent.innerHTML = "Player X's turn.";        
         xIsNext = !xIsNext;
     }
     
